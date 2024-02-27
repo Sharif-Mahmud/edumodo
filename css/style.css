@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+img{
+    width: 100%;
+    height:100%;
+}
+
+
+/* =========== 01 Header css area =========== */
+.header{
+    background-color: #fff;
+    padding:10px 0; 
+}
+.header .logo{
+    width:200px;
+}
+.header .logo img{
+    width:100%;
+}
+.header .header-menu{
+    list-style: none;
+    float:right;
+    margin-top:7px;
+}
+.header .header-menu li{
+    display: inline-block;
+    margin-right:20px;
+}
+.header .header-menu li a{
+    color:#808080;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .5s;
+}
+.header .header-menu li a i{
+    margin-left:3px;
+    transition: .5s;
+}
+.header .header-menu li:hover a i{
+    transform:rotate(180deg);
+}
+.header .header-menu li:hover a{
+    color: #FF5421;
+}
+
+
+/* =========== 02 Home css area =========== */
+.home{
+    padding: 160px 0;
+    background:url(../img/asset43.jpeg);
+    color:#fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.home:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: #000;
+    opacity: .4;
+}
+.home .home-content span{
+    font-size: 17px;
+    color:#FF5421;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+}
+.home .home-content h2{
+     font-family: 'Roboto', sans-serif;
+     font-size: 70px;
+     line-height:77px;
+     color:#fff;
+     font-weight: 700;
+}
+.home .home-content p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.home .home-content a.btn{
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #FF5421;
+    padding:15px 30px;
+    font-size: 14px;
+    transition:.5s;
+    margin-top:35px;
+}
+.home .home-content a.btn:hover{
+    background-color: red;;
+}
+/* =========== 03 Activities css area =========== */
+.activities{
+    background-color: #FF5421;
+    color:#fff;
+    padding:50px 0;
+}
+.activities .activity-single{
+    display:flex;
+}
+.activities .activity-single i{
+    font-size: 25px;
+    color:#FF5421;
+    background-color:#fff;
+    width:50px;
+    height:50px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top:10px;
+    margin-top:20px;
+}
+.activities .activity-single .content{
+    margin-left:20px;
+}
+.activities .activity-single .content h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom:15px;
+}
+/* =========== 04 Established css area =========== */
+.established{
+    padding:110px 0;
+}
+.established .title span{
+    color:#FF5421;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.established .title h2{
+    font-size: 44px;
+    padding:20px 0 40px;
+    color:#132643;
+}
+.established .title a{
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #FF5421;
+    padding:15px 30px;
+    font-size: 14px;
+    transition:.5s;
+    margin-top:35px;
+    text-decoration: none;
+    border-radius:5px;
+}
+.established .title a:hover{
+    background-color: red;
+    
+}
+.established .content p{
+    color:#61686E;
+    font-size: 16px;
+}
+/* =========== 05 Programs css area =========== */
+.programs{
+    background-color: #F5F5F5;
+    padding:100px 0;
+}
+.programs .heading{
+    text-align: center;
+    display:table;
+    margin:auto;
+}
+.programs .heading span{
+    font-size: 16px;
+    color:#FF5421;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.programs .heading h2{
+    font-size: 44px;
+    color:#132643;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.programs .single-program {
+    background-color: #fff;
+    width:355px;
+
+}
+.programs .single-program .img{
+    width:355px;
+    height:240px;
+}
+.programs .single-program .content{
+    padding:20px 30px 20px 20px;
+}
+.programs .single-program .content h4{
+    font-size:24px;
+    color:#132643;
+    text-transform: capitalize;
+}
+.programs .single-program .content p{
+    font-size:16px;
+    color:#61686E;
+}
+.programs .single-program .content a{
+    font-size:14px;
+    color:#FF5421;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    transiton:.3s;
+    margin-bottom:30px;
+    display: inline-block;
+}
+.programs .single-program .content a i{
+    margin-left:3px;
+    transition:.3s;
+}
+.programs .single-program .content a:hover i{
+    margin-left:6px;
+}
+.programs .single-program .content a:hover{
+    color:red;
+}
+
+/* =========== 06 Courses css area =========== */
+.courses{
+    background-color: #fff;
+    padding:100px 0;
+}
+.courses .heading{
+    text-align: center;
+    display:table;
+    margin:auto;
+}
+.courses .heading span{
+    font-size: 16px;
+    color:#FF5421;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.courses .heading h2{
+    font-size: 44px;
+    color:#132643;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.courses .single-course {
+    width:355px;
+    height:240px;
+    margin-bottom:309px;
+}
+.courses .single-course .ratings{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.courses .single-course .img{
+    width:355px;
+    height:240px;
+}
+.courses .single-course .content{
+    padding:20px 30px 20px 20px;
+    background-color: #ddd;
+}
+.courses .single-course .content a{
+    text-decoration: none;
+}
+.courses .single-course .content a h4{
+    font-size:24px;
+    color:#132643;
+    text-transform: capitalize;
+    transition:.5s;
+}
+.courses .single-course .content a:hover h4{
+    color:#FF5421;
+}
+.courses .single-course .content p{
+    font-size:16px;
+    color:#61686E;
+}
+.courses .single-course .content span{
+    font-size:14px;
+    color:#fff;
+    background:coral;
+    padding: 1px 6px;
+    text-transform: capitalize;
+}
+/* =========== 07 Counter css area =========== */
+.counter{
+    padding:50px 0;
+    background:url(../img/asset8.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color:#fff;
+    position: relative;
+}
+.counter:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:#FF5421;
+    height:100%;
+    width:100%;
+    opacity: .9;
+}
+.counter .single-counter{
+    text-align: center;
+}
+.counter .single-counter h3{
+    font-size: 44px;
+    font-weight: 700;
+}
+.counter .single-counter span{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* =========== 08 Testimonials css area =========== */
+.testimonials {
+    padding:100px 0;
+}
+.testimonials .heading{
+    text-align: center;
+    margin: auto;
+}
+.testimonials .heading span{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#FF5421;
+}
+.testimonials .heading h2{
+    font-size: 44px;
+    text-transform: capitalize;
+    color:#132643;
+    font-weight: 700;
+}
+.testimonials .single-testi{
+    background-color: #eee;
+    margin-top:40px;
+    padding:40px 20px;
+}
+.testimonials .single-testi i{
+    margin-bottom:30px;
+    font-size: 25px;
+    color:#61686E;
+}
+.testimonials .single-testi p{
+  font-size: 16px;
+  color:#61686E;
+  position:relative;
+    
+}
+.testimonials .single-testi p:before{
+    content:"";
+    height:1px;
+    width:100%;
+    background:#999;
+    position:absolute;
+    bottom:-40px;
+    left:0;
+}
+.testimonials .single-testi p:after{
+font-family: 'Font Awesome 5 Free';
+    content: '\f0dd';
+    color: #999;
+    font-weight: 900;
+    position: absolute;
+    bottom: -51px;
+    left: 60px
+;
+    
+   
+}
+.testimonials .single-testi .testi-man{
+    display:flex;
+    margin-left:40px;
+    margin-top:60px;
+}
+.testimonials .single-testi .testi-man img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.testimonials .single-testi .testi-man .name{
+    margin-left:30px;
+}
+.testimonials .name h5{
+ font-size: 20px;
+ color:#132643;
+ text-transform: capitalize;
+ margin-bottom:0;
+}
+.testimonials .name span{
+    font-size: 14px;
+    color:#61686E;
+    text-transform: capitalize;
+}
+
+/* =========== 09 Events css area =========== */
+.events{
+    background:#F5F5F5;
+    padding:90px 0;
+}
+.events .heading{
+    margin:auto;
+    text-align: center;
+}
+.events .heading span{
+    text-transform: uppercase;
+    color:#FF5421;
+    font-size: 16px;
+}
+.events .heading h2{
+    font-size: 44px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color:#132643;
+    margin-bottom:70px;
+}
+.events .single-event image{
+    width: 360px;
+    height: 240px;
+}
+.events .single-event image img{
+    width: 100%;
+    height: 100%;
+}
+.events .single-event .content{
+    background:#fff;
+    padding: 30px 20px;
+}
+.events .single-event .content .date span{
+    color:#61686E;
+    font-size: 14px;
+}
+.events .single-event .content .date span i{
+    color:#FF5421;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.events .single-event .content .date span:first-child{
+    margin-right: 30px;
+}
+.events .single-event h4{
+    font-size: 24px;
+    color:#132643;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.events .single-event p{
+    font-size: 16px;
+    color:#61686E;
+}
+.events .single-event a{
+    text-decoration: none;
+    color:#FF5421;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .5s;
+}
+.events .single-event a i{
+    margin-left:5px;
+    transition: .5s;
+}
+.events .single-event a:hover{
+    color:red;
+}
+.events .single-event a:hover i{
+    margin-left:10px;
+}
+/* =========== 10 Campus css area =========== */
+.campus{
+    padding:120px 0;
+    background:url(../img/asset43.jpeg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    color:#fff;
+    position: relative;
+      z-index: -1;
+}
+.campus::after{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#000;
+    opacity:.8;
+    top:0;
+    left:0;
+}
+.campus .content{
+ z-index: 1;
+ margin:auto;
+ text-align: center;
+}
+.campus .content span{
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.campus .content h2{
+    font-size: 48px;
+    color:#fff;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.campus .content .play-icon{
+    width:100px;
+    height:100px;
+    margin:auto;
+    background:orangered;
+    border-radius: 50%;
+    display: inline-block;
+}
+.campus .content .play-icon i:hover{
+    cursor: pointer;
+}
+.campus .content .play-icon i{
+    font-size: 35px;
+    /* margin-top:30px; */
+    /* text-align: center; */
+    display: block;
+    margin: auto;
+    line-height: 100px;
+}
+
+/* =========== 11 Choose css area =========== */
+.choose{
+    background:#F5F5F5;
+    padding:90px 0;
+}
+.choose .image{
+    width:560px;
+    height:565px;
+}
+.choose .content{
+    margin-left:60px;
+}
+.choose .content h2{
+    font-size: 44px;
+    color:#132643;
+    font-weight: 700;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.choose .choose-box{
+    display:flex;
+    margin-bottom:35px;
+}
+.choose .choose-box .icon{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    background-color: #FF5421;
+}
+.choose .choose-box .icon i{
+    color:#fff;
+    font-size: 35px;
+    margin-top:20px;
+    margin-left:15px;
+}
+.choose .choose-box h4{
+    font-size: 24px;
+    color:#132643;
+    font-weight: 700;
+}
+.choose .choose-box p{
+    width:90%;
+    font-size: 16px;
+    color:#61686E;
+}
+/* =========== 12 Teachers css area =========== */
+.teachers{
+    padding:100px 0;
+}
+.teachers .heading{
+    text-align: center;
+    margin:auto;
+}
+.teachers .heading span{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#FF5421;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.teachers .heading h2{
+    font-size: 44px;
+    font-weight: 700;
+    color:#132643;
+    margin-bottom:60px;
+}
+.teachers .single-teacher:hover{
+
+}
+
+
+
+
+.teachers .single-teacher image{
+    width:250px;
+    height:240px;
+}
+.teachers .single-teacher .content{
+    margin-top: 20px;
+    text-align: center;
+}
+.teachers .single-teacher .content h4{
+    font-size: 20px;
+    font-weight: 700;
+    color:#132643;
+    text-transform: capitalize;
+}
+.teachers .single-teacher .content span{
+    font-size: 15px;
+    color:#61686E;
+    text-transform: capitalize;
+}
+/* =========== 13 Blog css area =========== */
+.blog{
+    background:#F5F5F5;
+    padding:90px 0;
+}
+.blog .heading{
+    margin:auto;
+    text-align: center;
+}
+.blog .heading span{
+    text-transform: uppercase;
+    color:#FF5421;
+    font-size: 16px;
+}
+.blog .heading h2{
+    font-size: 44px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color:#132643;
+    margin-bottom:70px;
+}
+/* .blog .single-event .image{
+    width: 360px;
+    height: 240px;
+} */
+
+.blog .single-event .image{
+    overflow: hidden;
+}
+.blog .single-event .image img{
+    transition:.8s;
+}
+
+.blog .single-event .image img:hover{
+    transform:scale(1.2);
+}
+
+
+
+.blog .single-event image img{
+    width: 100%;
+    height: 100%;
+}
+.blog .single-event .content{
+    background:#fff;
+    padding: 30px 20px;
+}
+.blog .single-event .content .date span{
+    color:#61686E;
+    font-size: 14px;
+}
+.blog .single-event .content .date span i{
+    color:#FF5421;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.blog .single-event .content .date span:first-child{
+    margin-right: 30px;
+}
+.blog .single-event h4{
+    font-size: 24px;
+    color:#132643;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+.blog .single-event p{
+    font-size: 16px;
+    color:#61686E;
+}
+.blog .single-event a{
+    text-decoration: none;
+    color:#FF5421;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .5s;
+}
+.blog .single-event a i{
+    margin-left:5px;
+    transition: .5s;
+}
+.blog .single-event a:hover{
+    color:red;
+}
+.blog .single-event a:hover i{
+    margin-left:10px;
+}
+/* =========== 14 Footer css area =========== */
+.footer{
+    background:#313131;
+    padding:60px 0;
+    color:#fff;
+}
+.footer .footer-box h2{
+    font-size: 20px;
+    margin-bottom:20px;
+}
+.footer .footer-box p{
+    font-size: 15px;
+    color:#E1E1E1;
+}
+.footer .footer-box p span{
+    font-size: 15px;
+    color:#E1E1E1;
+    font-weight: 700;
+}
+.footer .footer-box ul li{
+    list-style: none;
+}
+.footer .footer-box ul li a{
+    color:#E1E1E1;
+    transition: .5s;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer .footer-box ul li a:hover{
+    color:orangered;
+}
+.footer .footer-box ul li a i{
+    margin-right:7px;
+}
+.footer .footer-box .sss{
+    margin-bottom:15px;
+    display: block;
+}
+.footer .footer-box .img-box img{
+    width:80px;
+    height:80px;
+    border-radius: 3px;
+}
+
+/* 15====footer-bottom css area ======*/
+.footer-bottom{
+    background-color: #2A2E31;
+    padding:10px 0;
+    color:#fff;
+}
+.footer-bottom ul{
+    float: right;
+}
+.footer-bottom ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:10px;
+}
+.footer-bottom ul li a{
+    color:#eee;
+    transition: .5s;
+    font-size: 18px;
+}
+.footer-bottom ul li a:hover{
+    color:#FF5421;
+}
+.footer-bottom .link{
+    text-decoration: none;
+    color:#eee;
+    font-size: 14px;
+    transition: .5s;
+    margin-left: 5px;
+}
+.footer-bottom .link:hover{
+    color:#FF5421;
+}
